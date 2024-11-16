@@ -2,49 +2,35 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: "master"
-  workflow_dispatch:
+    branches:
+      - main  # Jalankan action saat commit ke branch "main"
 
 jobs:
-  build_site:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: build
-        env:
-          BASE_PATH: "/${{ github.event.repository.name }}"
-        run: |
-          echo "${{ github.event.repository.name }}"
-          npm run build/index.js
-
-      - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: "build/"
-
-  deploy:
-    needs: build_site
+  build-and-deploy:
     runs-on: ubuntu-latest
 
-    permissions:
-      pages: write
-      id-token: write
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+    # Checkout kode
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Install Node.js
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20.17.0'  # Sesuaikan dengan versi Node.js Anda
+
+    # Install dependensi
+    - name: Install dependencies
+      run: npm install
+
+    # Build proyek
+    - name: Build project
+      run: npm run build
+
+    # Deploy ke GitHub Pages
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build  # Direktori output hasil build
