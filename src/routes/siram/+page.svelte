@@ -923,10 +923,10 @@
 										on:change={() => siramLahan(1)}
 									/>
 									<div class="swap-on h-6 w-12">
-										<img src="  /on6.png" alt="btn_on" />
+										<img src="{base}/on6.png" alt="btn_on" />
 									</div>
 									<div class="swap-off h-6 w-12">
-										<img src="  /off6.png" alt="btn_off" />
+										<img src="{base}/off6.png" alt="btn_off" />
 									</div>
 								</label>
 								<label class="swap h-10 w-full text-center text-xs">
@@ -937,10 +937,10 @@
 										on:change={() => siramLahan(2)}
 									/>
 									<div class="swap-on h-6 w-12">
-										<img src="  /on6.png" alt="btn_on" />
+										<img src="{base}/on6.png" alt="btn_on" />
 									</div>
 									<div class="swap-off h-6 w-12">
-										<img src="  /off6.png" alt="btn_off" />
+										<img src="{base}/off6.png" alt="btn_off" />
 									</div>
 								</label>
 								<label class="swap h-10 w-full text-center text-xs">
@@ -951,10 +951,10 @@
 										on:change={() => siramLahan(3)}
 									/>
 									<div class="swap-on h-6 w-12">
-										<img src="  /on6.png" alt="btn_on" />
+										<img src="{base}/on6.png" alt="btn_on" />
 									</div>
 									<div class="swap-off h-6 w-12">
-										<img src="  /off6.png" alt="btn_off" />
+										<img src="{base}/off6.png" alt="btn_off" />
 									</div>
 								</label>
 								<label class="swap h-10 w-full text-center text-xs">
@@ -965,10 +965,10 @@
 										on:change={() => siramLahan(4)}
 									/>
 									<div class="swap-on h-6 w-12">
-										<img src="  /on6.png" alt="btn_on" />
+										<img src="{base}/on6.png" alt="btn_on" />
 									</div>
 									<div class="swap-off h-6 w-12">
-										<img src="  /off6.png" alt="btn_off" />
+										<img src="{base}/off6.png" alt="btn_off" />
 									</div>
 								</label>
 							</div>
@@ -1001,10 +1001,10 @@
 											on:change={() => siramLahan(0)}
 										/>
 										<div class="swap-on">
-											<img src="  /on4.png" alt="btn_on" />
+											<img src="{base}/on4.png" alt="btn_on" />
 										</div>
 										<div class="swap-off">
-											<img src="  /off4.png" alt="btn_off" />
+											<img src="{base}/off4.png" alt="btn_off" />
 										</div>
 									</label>
 								</div>
@@ -1046,37 +1046,37 @@
 
 				<ul class="w-1/2 dropdown-content z-[1] rounded shadow-lg border">
 					<li>
-						<a href=" /home" class="grid grid-cols-4 bg-gray-200 p-2"
-							><img class="w-8 h-8" src=" /btn_home2.png" alt="home" />
+						<a  href="{base}/home" class="grid grid-cols-4 bg-gray-200 p-2"
+							><img class="w-8 h-8" src="{base}/btn_home2.png" alt="home" />
 							<div class="col-span-3 p-1">Home</div></a
 						>
 					</li>
 					<li>
-						<a href=" /siram" class="grid grid-cols-4 bg-white p-2"
-							><img class="w-8 h-8" src=" /penyiraman.png" alt="siram" />
+						<a  href="{base}/siram" class="grid grid-cols-4 bg-white p-2"
+							><img class="w-8 h-8" src="{base}/penyiraman.png" alt="siram" />
 							<div class="col-span-3 p-1">Siram</div></a
 						>
 					</li>
 					<li>
-						<a href=" /pestisida" class="grid grid-cols-4 bg-gray-200 p-2"
-							><img class="w-8 h-8" src=" /pestisida.png" alt="pest" />
+						<a  href="{base}/pestisida" class="grid grid-cols-4 bg-gray-200 p-2"
+							><img class="w-8 h-8" src="{base}/pestisida.png" alt="pest" />
 							<div class="col-span-3 p-1">Pestisida</div></a
 						>
 					</li>
 					<li>
-						<a href=" /biopest" class="grid grid-cols-4 bg-white p-2"
-							><img class="w-8 h-8" src=" /biopestisida.png" alt="biopest" />
+						<a  href="{base}/biopest" class="grid grid-cols-4 bg-white p-2"
+							><img class="w-8 h-8" src="{base}/biopestisida.png" alt="biopest" />
 							<div class="col-span-3 p-1">Biopestisida</div></a
 						>
 					</li>
 					<li>
-						<a href=" /setup" class="grid grid-cols-4 bg-gray-200 p-2"
-							><img class="w-8 h-8" src=" /setup.png" alt="home" />
+						<a  href="{base}/setup" class="grid grid-cols-4 bg-gray-200 p-2"
+							><img class="w-8 h-8" src="{base}/setup.png" alt="home" />
 							<div class="col-span-3 p-1">Setup</div></a
 						>
 					</li>
 					<li>
-						<a href=" /" class="grid grid-cols-4 bg-white p-2"
+						<a  href="{base}/" class="grid grid-cols-4 bg-white p-2"
 							><svg
 								fill="#000000"
 								class="w-6 h-6"
@@ -1151,10 +1151,10 @@
 								on:change={() => jadwalAktif(1)}
 							/>
 							<div class="swap-on h-6 w-12">
-								<img src="  /on6.png" alt="btn_on" />
+								<img src="{base}/on6.png" alt="btn_on" />
 							</div>
 							<div class="swap-off h-6 w-12">
-								<img src="  /off6.png" alt="btn_off" />
+								<img src="{base}/off6.png" alt="btn_off" />
 							</div>
 						</label>
 					</div>
@@ -1233,10 +1233,10 @@
 								on:change={() => jadwalAktif(2)}
 							/>
 							<div class="swap-on h-6 w-12">
-								<img src="  /on6.png" alt="btn_on" />
+								<img src="{base}/on6.png" alt="btn_on" />
 							</div>
 							<div class="swap-off h-6 w-12">
-								<img src="  /off6.png" alt="btn_off" />
+								<img src="{base}/off6.png" alt="btn_off" />
 							</div>
 						</label>
 					</div>
@@ -1315,10 +1315,10 @@
 								on:change={() => jadwalAktif(3)}
 							/>
 							<div class="swap-on h-6 w-12">
-								<img src="  /on6.png" alt="btn_on" />
+								<img src="{base}/on6.png" alt="btn_on" />
 							</div>
 							<div class="swap-off h-6 w-12">
-								<img src="  /off6.png" alt="btn_off" />
+								<img src="{base}/off6.png" alt="btn_off" />
 							</div>
 						</label>
 					</div>
@@ -1397,10 +1397,10 @@
 								on:change={() => jadwalAktif(4)}
 							/>
 							<div class="swap-on h-6 w-12">
-								<img src="  /on6.png" alt="btn_on" />
+								<img src="{base}/on6.png" alt="btn_on" />
 							</div>
 							<div class="swap-off h-6 w-12">
-								<img src="  /off6.png" alt="btn_off" />
+								<img src="{base}/off6.png" alt="btn_off" />
 							</div>
 						</label>
 					</div>
@@ -1479,10 +1479,10 @@
 								on:change={() => jadwalAktif(5)}
 							/>
 							<div class="swap-on h-6 w-12">
-								<img src="  /on6.png" alt="btn_on" />
+								<img src="{base}/on6.png" alt="btn_on" />
 							</div>
 							<div class="swap-off h-6 w-12">
-								<img src="  /off6.png" alt="btn_off" />
+								<img src="{base}/off6.png" alt="btn_off" />
 							</div>
 						</label>
 					</div>
