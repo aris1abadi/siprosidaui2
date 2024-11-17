@@ -7,11 +7,9 @@ export default {
       assets: 'build',
       fallback: null, // gunakan 'index.html' jika ada routing dinamis
     }),
-    paths: {
-      base: '/siprosidaui2', // Ganti dengan nama repository Anda
-    },
+    
     prerender: {
-      default: true, // Prerender semua halaman
+      entries: ['*'], // Ini memprerender semua halaman
     },
   },
 };
