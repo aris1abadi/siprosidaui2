@@ -1,6 +1,7 @@
 <script>
 	import { goto } from '$app/navigation';
 	import { kirimMsg } from '$lib/mqttHandle';
+	import { base } from '$app/paths';
 
 	import {
 		resetAllValue,
@@ -709,10 +710,10 @@
 											on:change={() => kalibrasiLengas_start(1)}
 										/>
 										<div class="swap-on h-6 w-12">
-											<img src=" /on6.png" alt="btn_on" />
+											<img src=" {base}/on6.png" alt="btn_on" />
 										</div>
 										<div class="swap-off h-6 w-12">
-											<img src=" /off6.png" alt="btn_off" />
+											<img src=" {base}/off6.png" alt="btn_off" />
 										</div>
 									</label>
 								</div>
@@ -755,10 +756,10 @@
 											on:change={() => kalibrasiLengas_start(2)}
 										/>
 										<div class="swap-on h-6 w-12">
-											<img src=" /on6.png" alt="btn_on" />
+											<img src=" {base}/on6.png" alt="btn_on" />
 										</div>
 										<div class="swap-off h-6 w-12">
-											<img src=" /off6.png" alt="btn_off" />
+											<img src=" {base}/off6.png" alt="btn_off" />
 										</div>
 									</label>
 								</div>
@@ -801,10 +802,10 @@
 											on:change={() => kalibrasiLengas_start(3)}
 										/>
 										<div class="swap-on h-6 w-12">
-											<img src=" /on6.png" alt="btn_on" />
+											<img src=" {base}/on6.png" alt="btn_on" />
 										</div>
 										<div class="swap-off h-6 w-12">
-											<img src=" /off6.png" alt="btn_off" />
+											<img src=" {base}/off6.png" alt="btn_off" />
 										</div>
 									</label>
 								</div>
@@ -847,10 +848,10 @@
 											on:change={() => kalibrasiLengas_start(4)}
 										/>
 										<div class="swap-on h-6 w-12">
-											<img src=" /on6.png" alt="btn_on" />
+											<img src=" {base}/on6.png" alt="btn_on" />
 										</div>
 										<div class="swap-off h-6 w-12">
-											<img src=" /off6.png" alt="btn_off" />
+											<img src=" {base}/off6.png" alt="btn_off" />
 										</div>
 									</label>
 								</div>
@@ -881,10 +882,10 @@
 									on:change={() => selenoidLahan(1, $lahan1_status)}
 								/>
 								<div class="swap-on h-6 w-12">
-									<img src=" /on6.png" alt="btn_on" />
+									<img src=" {base}/on6.png" alt="btn_on" />
 								</div>
 								<div class="swap-off h-6 w-12">
-									<img src=" /off6.png" alt="btn_off" />
+									<img src=" {base}/off6.png" alt="btn_off" />
 								</div>
 							</label>
 
@@ -896,10 +897,10 @@
 									on:change={() => selenoidLahan(2, $lahan2_status)}
 								/>
 								<div class="swap-on h-6 w-12">
-									<img src=" /on6.png" alt="btn_on" />
+									<img src=" {base}/on6.png" alt="btn_on" />
 								</div>
 								<div class="swap-off h-6 w-12">
-									<img src=" /off6.png" alt="btn_off" />
+									<img src=" {base}/off6.png" alt="btn_off" />
 								</div>
 							</label>
 
@@ -911,10 +912,10 @@
 									on:change={() => selenoidLahan(3, $lahan3_status)}
 								/>
 								<div class="swap-on h-6 w-12">
-									<img src=" /on6.png" alt="btn_on" />
+									<img src=" {base}/on6.png" alt="btn_on" />
 								</div>
 								<div class="swap-off h-6 w-12">
-									<img src=" /off6.png" alt="btn_off" />
+									<img src=" {base}/off6.png" alt="btn_off" />
 								</div>
 							</label>
 							<label class="swap h-12 w-full text-center text-[10px]"
@@ -925,10 +926,10 @@
 									on:change={() => selenoidLahan(4, $lahan4_status)}
 								/>
 								<div class="swap-on h-6 w-12">
-									<img src=" /on6.png" alt="btn_on" />
+									<img src=" {base}/on6.png" alt="btn_on" />
 								</div>
 								<div class="swap-off h-6 w-12">
-									<img src=" /off6.png" alt="btn_off" />
+									<img src=" {base}/off6.png" alt="btn_off" />
 								</div>
 							</label>
 						</div>
@@ -947,10 +948,10 @@
 										on:change={() => pompaTes(2)}
 									/>
 									<div class="swap-on">
-										<img src=" /on4.png" alt="btn_on" />
+										<img src=" {base}/on4.png" alt="btn_on" />
 									</div>
 									<div class="swap-off">
-										<img src=" /off4.png" alt="btn_off" />
+										<img src=" {base}/off4.png" alt="btn_off" />
 									</div>
 								</label>
 							</div>
@@ -967,10 +968,10 @@
 										on:change={() => pompaTes(1)}
 									/>
 									<div class="swap-on">
-										<img src=" /on4.png" alt="btn_on" />
+										<img src=" {base}/on4.png" alt="btn_on" />
 									</div>
 									<div class="swap-off">
-										<img src=" /off4.png" alt="btn_off" />
+										<img src=" {base}/off4.png" alt="btn_off" />
 									</div>
 								</label>
 							</div>
@@ -987,10 +988,10 @@
 									on:change={() => pompaTes(3)}
 								/>
 								<div class="swap-on h-6 w-12">
-									<img src=" /on6.png" alt="btn_on" />
+									<img src=" {base}/on6.png" alt="btn_on" />
 								</div>
 								<div class="swap-off h-6 w-12">
-									<img src=" /off6.png" alt="btn_off" />
+									<img src=" {base}/off6.png" alt="btn_off" />
 								</div>
 							</label>
 
@@ -1002,10 +1003,10 @@
 									on:change={() => pompaTes(4)}
 								/>
 								<div class="swap-on h-6 w-12">
-									<img src=" /on6.png" alt="btn_on" />
+									<img src=" {base}/on6.png" alt="btn_on" />
 								</div>
 								<div class="swap-off h-6 w-12">
-									<img src=" /off6.png" alt="btn_off" />
+									<img src=" {base}/off6.png" alt="btn_off" />
 								</div>
 							</label>
 
@@ -1017,10 +1018,10 @@
 									on:change={() => selenoidTes(1)}
 								/>
 								<div class="swap-on h-6 w-12">
-									<img src=" /on6.png" alt="btn_on" />
+									<img src=" {base}/on6.png" alt="btn_on" />
 								</div>
 								<div class="swap-off h-6 w-12">
-									<img src=" /off6.png" alt="btn_off" />
+									<img src=" {base}/off6.png" alt="btn_off" />
 								</div>
 							</label>
 							<label class="swap h-12 w-full text-center text-[10px]"
@@ -1031,10 +1032,10 @@
 									on:change={() => selenoidTes(2)}
 								/>
 								<div class="swap-on h-6 w-12">
-									<img src=" /on6.png" alt="btn_on" />
+									<img src=" {base}/on6.png" alt="btn_on" />
 								</div>
 								<div class="swap-off h-6 w-12">
-									<img src=" /off6.png" alt="btn_off" />
+									<img src=" {base}/off6.png" alt="btn_off" />
 								</div>
 							</label>
 						</div>
@@ -1050,10 +1051,10 @@
 									on:change={() => pompaTes(5)}
 								/>
 								<div class="swap-on h-6 w-12">
-									<img src=" /on6.png" alt="btn_on" />
+									<img src=" {base}/on6.png" alt="btn_on" />
 								</div>
 								<div class="swap-off h-6 w-12">
-									<img src=" /off6.png" alt="btn_off" />
+									<img src=" {base}/off6.png" alt="btn_off" />
 								</div>
 							</label>
 
@@ -1065,10 +1066,10 @@
 									on:change={() => pompaTes(6)}
 								/>
 								<div class="swap-on h-6 w-12">
-									<img src=" /on6.png" alt="btn_on" />
+									<img src=" {base}/on6.png" alt="btn_on" />
 								</div>
 								<div class="swap-off h-6 w-12">
-									<img src=" /off6.png" alt="btn_off" />
+									<img src=" {base}/off6.png" alt="btn_off" />
 								</div>
 							</label>
 
@@ -1080,10 +1081,10 @@
 									on:change={() => selenoidTes(3)}
 								/>
 								<div class="swap-on h-6 w-12">
-									<img src=" /on6.png" alt="btn_on" />
+									<img src=" {base}/on6.png" alt="btn_on" />
 								</div>
 								<div class="swap-off h-6 w-12">
-									<img src=" /off6.png" alt="btn_off" />
+									<img src=" {base}/off6.png" alt="btn_off" />
 								</div>
 							</label>
 							<label class="swap h-12 w-full text-center text-[10px]"
@@ -1094,10 +1095,10 @@
 									on:change={() => selenoidTes(4)}
 								/>
 								<div class="swap-on h-6 w-12">
-									<img src=" /on6.png" alt="btn_on" />
+									<img src=" {base}/on6.png" alt="btn_on" />
 								</div>
 								<div class="swap-off h-6 w-12">
-									<img src=" /off6.png" alt="btn_off" />
+									<img src=" {base}/off6.png" alt="btn_off" />
 								</div>
 							</label>
 						</div>
@@ -1279,37 +1280,37 @@
 
 			<ul class="w-1/2 mr-8 dropdown-content z-[1] rounded shadow-lg border">
 				<li>
-					<a href="/home" class="grid grid-cols-4 bg-gray-200 p-2"
-						><img class="w-8 h-8" src="/btn_home2.png" alt="home" />
+					<a href="{base}/home" class="grid grid-cols-4 bg-gray-200 p-2"
+						><img class="w-8 h-8" src="{base}/btn_home2.png" alt="home" />
 						<div class="col-span-3 p-1">Home</div></a
 					>
 				</li>
 				<li>
-					<a href="/siram" class="grid grid-cols-4 bg-white p-2"
-						><img class="w-8 h-8" src="/penyiraman.png" alt="siram" />
+					<a href="{base}/siram" class="grid grid-cols-4 bg-white p-2"
+						><img class="w-8 h-8" src="{base}/penyiraman.png" alt="siram" />
 						<div class="col-span-3 p-1">Siram</div></a
 					>
 				</li>
 				<li>
-					<a href="/pestisida" class="grid grid-cols-4 bg-gray-200 p-2"
-						><img class="w-8 h-8" src="/pestisida.png" alt="pest" />
+					<a href="{base}/pestisida" class="grid grid-cols-4 bg-gray-200 p-2"
+						><img class="w-8 h-8" src="{base}/pestisida.png" alt="pest" />
 						<div class="col-span-3 p-1">Pestisida</div></a
 					>
 				</li>
 				<li>
-					<a href="/biopest" class="grid grid-cols-4 bg-white p-2"
-						><img class="w-8 h-8" src="/biopestisida.png" alt="biopest" />
+					<a href="{base}/biopest" class="grid grid-cols-4 bg-white p-2"
+						><img class="w-8 h-8" src="{base}/biopestisida.png" alt="biopest" />
 						<div class="col-span-3 p-1">Biopestisida</div></a
 					>
 				</li>
 				<li>
-					<a href="/setup" class="grid grid-cols-4 bg-gray-200 p-2"
-						><img class="w-8 h-8" src="/setup.png" alt="home" />
+					<a href="{base}/setup" class="grid grid-cols-4 bg-gray-200 p-2"
+						><img class="w-8 h-8" src="{base}/setup.png" alt="home" />
 						<div class="col-span-3 p-1">Setup</div></a
 					>
 				</li>
 				<li>
-					<a href="/" class="grid grid-cols-4 bg-white p-2"
+					<a href="{base}/" class="grid grid-cols-4 bg-white p-2"
 						><svg
 							fill="#000000"
 							class="w-6 h-6"
