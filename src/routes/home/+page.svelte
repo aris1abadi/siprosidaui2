@@ -1,7 +1,7 @@
 <script>
 	import { goto } from '$app/navigation';
 	import { kirimMsg } from '$lib/mqttHandle';
-	const base = ' '
+	import { base } from '$app/paths';
 	
 	import {
 		suhuUdara,
@@ -46,7 +46,7 @@
 <div class="h-screen w-screen bg-zinc-800">
 	<div class="mainbg h-full w-full max-w-md mx-auto flex flex-col">
 		<div class="w-full h-16">
-			<img src="/hd_home.png" alt="hd_home" />
+			<img src="{base}/hd_home.png" alt="hd_home" />
 		</div>
 		<div class="text-xs w-full text-center mt-4">{get(kontrolIDStore)}</div>
 		<div class="w-full h-4 grid justify-items-center my-2">
@@ -107,10 +107,10 @@
 						<input type="checkbox" />
 
 						<div class="swap-on">
-							<img src="/btn_air1.png" alt="srm_on" />
+							<img src="{base}/btn_air1.png" alt="srm_on" />
 						</div>
 						<div class="swap-off">
-							<img src="/btn_air2.png" alt="srm_off" />
+							<img src="{base}/btn_air2.png" alt="srm_off" />
 						</div>
 					</label>
 
@@ -120,10 +120,10 @@
 							<input type="checkbox" />
 
 							<div class="swap-on">
-								<img class="ml-2" src="/btnhijau.jpeg" alt="btn_on" />
+								<img class="ml-2" src="{base}/btnhijau.jpeg" alt="btn_on" />
 							</div>
 							<div class="swap-off">
-								<img class="ml-2" src="/btnmerah.jpeg" alt="btn_off" />
+								<img class="ml-2" src="{base}/btnmerah.jpeg" alt="btn_off" />
 							</div>
 						</label>
 					</div>
@@ -139,7 +139,7 @@
 					<small>Penyiramam</small>
 				</div>
 				<div>
-					<img src="/penyiraman.png" alt="siram" />
+					<img src="{base}/penyiraman.png" alt="siram" />
 				</div>
 			</button>
 			<button on:click={() => openPage(2)} class="col-span-3 h-full bg-white rounded-lg shadow-xl">
@@ -147,7 +147,7 @@
 					<small>Pestisida</small>
 				</div>
 				<div>
-					<img src="/pestisida.png" alt="pestisida" />
+					<img src="{base}/pestisida.png" alt="pestisida" />
 				</div>
 			</button>
 			<button on:click={() => openPage(3)} class="col-span-3 h-full bg-white rounded-lg shadow-xl">
@@ -155,7 +155,7 @@
 					<small>Biopestisida</small>
 				</div>
 				<div>
-					<img src="/biopestisida.png" alt="biopest" />
+					<img src="{base}/biopestisida.png" alt="biopest" />
 				</div>
 			</button>
 			<div class="col-span-1"></div>
@@ -194,37 +194,37 @@
 
 			<ul class="w-1/2 mr-8 dropdown-content z-[1] rounded shadow-lg border">
 				<li>
-					<a  href="/home" class="grid grid-cols-4 bg-gray-200 p-2"
-						><img class="w-8 h-8" src="/btn_home2.png" alt="home" />
+					<a  href="{base}/home" class="grid grid-cols-4 bg-gray-200 p-2"
+						><img class="w-8 h-8" src="{base}/btn_home2.png" alt="home" />
 						<div class="col-span-3 p-1">Home</div></a
 					>
 				</li>
 				<li>
-					<a  href="/siram" class="grid grid-cols-4 bg-white p-2"
-						><img class="w-8 h-8" src="/penyiraman.png" alt="siram" />
+					<a  href="{base}/siram" class="grid grid-cols-4 bg-white p-2"
+						><img class="w-8 h-8" src="{base}/penyiraman.png" alt="siram" />
 						<div class="col-span-3 p-1">Siram</div></a
 					>
 				</li>
 				<li>
-					<a  href="/pestisida" class="grid grid-cols-4 bg-gray-200 p-2"
-						><img class="w-8 h-8" src="/pestisida.png" alt="pest" />
+					<a  href="{base}/pestisida" class="grid grid-cols-4 bg-gray-200 p-2"
+						><img class="w-8 h-8" src="{base}/pestisida.png" alt="pest" />
 						<div class="col-span-3 p-1">Pestisida</div></a
 					>
 				</li>
 				<li>
-					<a  href="/biopest" class="grid grid-cols-4 bg-white p-2"
-						><img class="w-8 h-8" src="/biopestisida.png" alt="biopest" />
+					<a  href="{base}/biopest" class="grid grid-cols-4 bg-white p-2"
+						><img class="w-8 h-8" src="{base}/biopestisida.png" alt="biopest" />
 						<div class="col-span-3 p-1">Biopestisida</div></a
 					>
 				</li>
 				<li>
-					<a  href="/setup" class="grid grid-cols-4 bg-gray-200 p-2"
-						><img class="w-8 h-8" src="/setup.png" alt="home" />
+					<a  href="{base}/setup" class="grid grid-cols-4 bg-gray-200 p-2"
+						><img class="w-8 h-8" src="{base}/setup.png" alt="home" />
 						<div class="col-span-3 p-1">Setup</div></a
 					>
 				</li>
 				<li>
-					<a  href="/" class="grid grid-cols-4 bg-white p-2"
+					<a  href="{base}/" class="grid grid-cols-4 bg-white p-2"
 						><svg
 							fill="#000000"
 							class="w-6 h-6"
