@@ -10,6 +10,10 @@
 		"sourceMap": true,
 		"strict": true,
 		"moduleResolution": "bundler",
+		"paths": {
+      "$lib": ["/src/lib"],
+      "$routes": ["/src/routes"]
+    }
 		
 	}
 	// Path aliases are handled by https://svelte.dev/docs/kit/configuration#alias
