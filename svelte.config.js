@@ -1,26 +1,17 @@
 import adapter from '@sveltejs/adapter-static';
 
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
-	kit: {
-		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
-		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
-		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
-		adapter: adapter({
-			// default options are shown. On some platforms
-			// these options are set automatically — see below
-			pages: 'build',
-			assets: 'build',
-			fallback: 'index.html',
-			precompress: false,
-			strict: true
-		}),
-		prerender: {
-			entries: [
-			  '*', // Prerender semua halaman yang ditemukan
-			],
-		  },
-	}
+export default {
+  kit: {
+    adapter: adapter({
+      pages: 'build',
+      assets: 'build',
+      fallback: null, // gunakan 'index.html' jika ada routing dinamis
+    }),
+    paths: {
+      base: '/siprosidaui2', // Ganti dengan nama repository Anda
+    },
+    prerender: {
+      default: true, // Prerender semua halaman
+    },
+  },
 };
-
-export default config;
