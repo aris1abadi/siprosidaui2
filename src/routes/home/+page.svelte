@@ -1,7 +1,7 @@
 <script>
 	import { goto } from '$app/navigation';
 	import { kirimMsg } from '$lib/mqttHandle';
-	import { base } from '$app/paths';
+	const base = '/siprosidaui2'
 	
 	import {
 		suhuUdara,

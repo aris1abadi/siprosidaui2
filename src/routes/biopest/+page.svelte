@@ -2,8 +2,8 @@
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { kirimMsg } from '$lib/mqttHandle';
-	import { base } from '$app/paths';
-	
+	//const base = '/siprosidaui2'
+	const base = '/siprosidaui2'
 	import {
 		lahan1Biopest_status,
 		lahan2Biopest_status,
