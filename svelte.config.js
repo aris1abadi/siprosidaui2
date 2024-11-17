@@ -8,7 +8,7 @@ export default {
       fallback: null, // gunakan 'index.html' jika ada routing dinamis
     }),
     paths: {
-      base: '/siprosidaui2', // Ganti dengan nama repository Anda
+      base: './siprosidaui2', // Ganti dengan nama repository Anda
     },
     prerender: {
       entries: ['*'], // Ini memprerender semua halaman
