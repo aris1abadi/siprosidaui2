@@ -996,37 +996,37 @@
 
 				<ul class="w-1/2 dropdown-content z-[1] rounded shadow-lg border">
 					<li>
-						<a href="{base}/home" class="grid grid-cols-4 bg-gray-200 p-2"
+						<a href="/home" class="grid grid-cols-4 bg-gray-200 p-2"
 							><img class="w-8 h-8" src="{base}/btn_home2.png" alt="home" />
 							<div class="col-span-3 p-1">Home</div></a
 						>
 					</li>
 					<li>
-						<a href="{base}/siram" class="grid grid-cols-4 bg-white p-2"
+						<a href="/siram" class="grid grid-cols-4 bg-white p-2"
 							><img class="w-8 h-8" src="{base}/penyiraman.png" alt="siram" />
 							<div class="col-span-3 p-1">Siram</div></a
 						>
 					</li>
 					<li>
-						<a href="{base}/pestisida" class="grid grid-cols-4 bg-gray-200 p-2"
+						<a href="/pestisida" class="grid grid-cols-4 bg-gray-200 p-2"
 							><img class="w-8 h-8" src="{base}/pestisida.png" alt="pest" />
 							<div class="col-span-3 p-1">Pestisida</div></a
 						>
 					</li>
 					<li>
-						<a href="{base}/biopest" class="grid grid-cols-4 bg-white p-2"
+						<a href="/biopest" class="grid grid-cols-4 bg-white p-2"
 							><img class="w-8 h-8" src="{base}/biopestisida.png" alt="biopest" />
 							<div class="col-span-3 p-1">Biopestisida</div></a
 						>
 					</li>
 					<li>
-						<a href="{base}/setup" class="grid grid-cols-4 bg-gray-200 p-2"
+						<a href="/setup" class="grid grid-cols-4 bg-gray-200 p-2"
 							><img class="w-8 h-8" src="{base}/setup.png" alt="home" />
 							<div class="col-span-3 p-1">Setup</div></a
 						>
 					</li>
 					<li>
-						<a href="{base}/" class="grid grid-cols-4 bg-white p-2"
+						<a href="/" class="grid grid-cols-4 bg-white p-2"
 							><svg
 								fill="#000000"
 								class="w-6 h-6"
