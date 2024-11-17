@@ -1601,7 +1601,7 @@
 
 <style>
 	.bg_pestisida {
-		background-image: url(' /bg_pestisida.png');
+		background-image: url('/bg_pestisida.png');
 		background-size: cover;
 		background-position: center;
 	}
